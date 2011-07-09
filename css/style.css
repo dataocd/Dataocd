@@ -1,0 +1,66 @@
+body {  background: url("/images/wrap-bg.png") repeat-x scroll 0 0 #FFF; font-family: Verdana, Helvetica, sans-serif; font-size: 12px; margin: 0 auto; margin-top: 20px; }
+img { border: 0; width: 100%; display: block; max-width: 100%; }
+a, a:visited { color: #5e99da; }
+
+#cred { font-size: .7em; color: #aaa; }
+#wrapper { width: 100%; max-width: 100%; height:auto; overflow: hidden; }
+#header { height: 100px; width: 100%; max-width: 100%; }
+
+#navigation { color: #FFFFFF; margin: 0 auto; padding: 0; height: auto; overflow: hidden; }
+#navigation .wrap { background: none repeat scroll 0 0 #000; height: 40px; margin: 0 auto; width: 100%; max-width: 100%; }
+#navigation ul { float: left; list-style: none outside none; margin: 0; padding: 0 0 0 10px; width: 100%; max-width: 100%; }
+#navigation li { float: left; list-style: none outside none; margin: 0; padding: 0; }
+#navigation li a { color: #FFFFFF; display: block; font-size: 14px; font-weight: bold; margin: 0; padding: 10px 15px; position: relative; text-decoration: none; text-shadow: 1px 1px #00839E; }
+#navigation li a:hover, #navigation li a.active { background: none repeat scroll 0 0 #5e99da; color: #FFFFFF; }
+#navigation li a:hover { background-color: #b1d1f2; }
+
+#wrapper_container { padding: 0 20px; width: 100%; max-width: 100%; height:auto; overflow: hidden; margin: 20px 0; }
+
+#footer { width: 100%; max-width: 100%; height: auto; overflow: hidden; padding: 30px 0; background: none repeat scroll 0 0 #444444; color: #DDDDDD; font-size: 11px; margin: 0 auto; overflow: hidden; text-shadow: 1px 1px #000000; text-transform: uppercase; }
+
+/* tables */
+table.tablesorter {	background-color: #eee; margin:10px 0pt 15px; width: 100%; text-align: left; }
+table.tablesorter thead tr th, table.tablesorter tfoot tr th { background-color: #b1d1f2; border: 1px solid #FFF; padding: 4px; }
+table.tablesorter thead tr .header { background-image: url("/images/sorter_bg.gif"); background-repeat: no-repeat; background-position: center right; cursor: pointer; }
+table.tablesorter tbody td { color: #000; padding: 4px; vertical-align: top; }
+table.tablesorter tbody tr { background-color: #FAFAFA; }
+table.tablesorter tbody tr:hover { background-color: #FFFFBD; }
+table.tablesorter thead tr .headerSortUp { background-image: url(/images/asc.gif); }
+table.tablesorter thead tr .headerSortDown { background-image: url(/images/desc.gif); }
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp { background-color: #5e99da; color: #fff; }
+.ui-button-text-only .ui-button-text { padding: 3px; }
+
+table.tablesorter tbody tr.bl_completed { background-color: #CDEB8B; }
+
+.rating{ width:80px; height:16px; margin:0 0 20px 0; padding:0; list-style:none; clear:both; position:relative; background: url(/images/star-matrix.gif) no-repeat 0 0; }
+/* add these classes to the ul to effect the change to the correct number of stars */
+.nostar {background-position:0 0}
+.onestar {background-position:0 -16px}
+.twostar {background-position:0 -32px}
+.threestar {background-position:0 -48px}
+.fourstar {background-position:0 -64px}
+.fivestar {background-position:0 -80px}
+
+ul.rating li { cursor: pointer; /*ie5 mac doesn't like it if the list is floated*/ float:left; /* end hide*/ text-indent:-999em; }
+ul.rating li a { position:absolute; left:0; top:0; width:16px; height:16px; text-decoration:none; z-index: 200; }
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+ul.rating li a:hover { z-index:2; width:80px; height:16px; overflow:hidden; left:0;	background: url(/images/star-matrix.gif) no-repeat 0 0; }
+ul.rating li.one a:hover {background-position:0 -96px;}
+ul.rating li.two a:hover {background-position:0 -112px;}
+ul.rating li.three a:hover {background-position:0 -128px}
+ul.rating li.four a:hover {background-position:0 -144px}
+ul.rating li.five a:hover {background-position:0 -160px}
+/* end rating code */
+
+#purr-container { position: fixed; top: 0; right: 0; }
+.notice { position: relative; width: 324px; text-align: left; }
+.notice .close { position: absolute; top: 12px; right: 12px; display: block; width: 18px; height: 17px; text-indent: -9999px; background: url(/images/purrClose.png) no-repeat 0 10px;}
+.notice-body { min-height: 50px; padding: 22px 22px 0 22px; background: url(/images/purrTop.png) no-repeat left top; color: #f9f9f9; }
+.notice-body img { width: 50px; margin: 0 10px 0 0; float: left;}
+.notice-body h3	{ margin: 0; font-size: 1.1em;}
+.notice-body p { margin: 5px 0 0 60px; font-size: 0.8em; line-height: 1.4em;}
+.notice-bottom { height: 22px; background: url(/images/purrBottom.png) no-repeat left top; }
